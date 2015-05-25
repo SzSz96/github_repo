@@ -11,7 +11,7 @@ struct szov : public widget
 {
     std::string s;
     bool smelyik;
-    int szamolo = 1;
+    int szamolo = 2;
     //bool k;
     szov(int num1, int num2, bool num5, std::string str1);
     virtual void rajzol();

@@ -49,6 +49,7 @@ int main()
                     for (int i = 0; i < 40; i++)
                     {
                         wid[j][i]->valt(ev.pos_x, ev.pos_y);
+                        wid[j][i]->kovetkezo();
                     }
                 }
                 for(int z = 0; z < szoveges.size(); z++)

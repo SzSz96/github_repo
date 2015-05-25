@@ -17,6 +17,7 @@ class widget
     virtual void focusjel();
     virtual void katt(genv::event ev);
     virtual void allito();
+    virtual void kovetkezo();
     virtual void valt(int px, int py);
     bool setf(int px, int py);
 };

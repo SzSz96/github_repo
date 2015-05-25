@@ -19,6 +19,20 @@ bool cb::all() const
         else return false;
     }
 
+void cb::kovetkezo()
+{
+    if (btn_left == 1 && szamlalo%2 == 1)
+    {
+        szamlalo++;
+        melyik = true;
+    }
+    else
+    {
+        szamlalo++;
+        melyik = false;
+    }
+}
+
 void cb::rajzol()
     {
         gout << move_to(x, y);
@@ -48,14 +62,12 @@ void cb::rajzol()
                 {
                     if(status == true)
                     {
-                        if (btn_left == 1 && szamlalo%2 == 1)
+                        if (melyik == true)
                         {
-                            szamlalo++;
                             gout << color(150,0,150);
                         }
                         else
                         {
-                            szamlalo++;
                             gout << color(0,150,150);
                         }
                     }

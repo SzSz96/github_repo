@@ -55,3 +55,8 @@ void widget::allito()
 {
 
 }
+
+void widget::kovetkezo()
+{
+
+}
